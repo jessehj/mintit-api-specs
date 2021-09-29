@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "swagger-ui-react/swagger-ui.css";
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router";
+import SwaggerUI from "swagger-ui-react";
+import mintitSpec from "./pages/mintit/specs";
+import kbcardSpec from "./pages/kbcard/specs";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route
+          path={"/"}
+          exact
+          render={() => <SwaggerUI spec={mintitSpec} />}
+        />
+        <Route
+          path={"/kbcard"}
+          render={() => <SwaggerUI spec={kbcardSpec} />}
+        />
+        <Redirect to={"/"} path={"*"} />
+      </Switch>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
