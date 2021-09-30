@@ -52,7 +52,7 @@ const gatewayApi = {
                     type: "string",
                     example: "APP_0000",
                     description:
-                      "응답코드:\n* APP_0000 - 성공\n* APP_4004 - 미등록 유저",
+                      "응답코드:\n* APP_0000 - 성공\n* APP_0404 - 미등록 유저",
                   },
                   msg: {
                     type: "string",
@@ -66,7 +66,7 @@ const gatewayApi = {
             },
           },
         },
-        APP_4004: {
+        APP_0404: {
           description: "미등록 유저",
           content: {
             "application/json": {
@@ -76,9 +76,9 @@ const gatewayApi = {
                 properties: {
                   code: {
                     type: "string",
-                    example: "APP_4004",
+                    example: "APP_0404",
                     description:
-                      "응답코드:\n* APP_0000 - 성공\n* APP_4004 - 미등록 유저",
+                      "응답코드:\n* APP_0000 - 성공\n* APP_0404 - 미등록 유저",
                   },
                   msg: {
                     type: "string",
@@ -106,13 +106,13 @@ const gatewayApi = {
             "application/json": {
               schema: {
                 type: "object",
-                required: ["code", "msg"],
+                required: ["code", "msg", "dataset"],
                 properties: {
                   code: {
                     type: "string",
                     example: "APP_0000",
                     description:
-                      "응답코드:\n* APP_0000 - 성공\n* APP_4004 - 약관 없음",
+                      "응답코드:\n* APP_0000 - 성공\n* APP_0404 - 약관 없음",
                   },
                   msg: {
                     type: "string",
@@ -129,7 +129,7 @@ const gatewayApi = {
             },
           },
         },
-        APP_4004: {
+        APP_0404: {
           description: "약관 없음",
           content: {
             "application/json": {
@@ -139,9 +139,9 @@ const gatewayApi = {
                 properties: {
                   code: {
                     type: "string",
-                    example: "APP_4004",
+                    example: "APP_0404",
                     description:
-                      "응답코드:\n* APP_0000 - 성공\n* APP_4004 - 약관 없음",
+                      "응답코드:\n* APP_0000 - 성공\n* APP_0404 - 약관 없음",
                   },
                   msg: {
                     type: "string",
@@ -212,7 +212,7 @@ const gatewayApi = {
                     type: "string",
                     example: "APP_0000",
                     description:
-                      "응답코드:\n* APP_0000 - 성공\n* APP_3006 - 이미 가입된 유저",
+                      "응답코드:\n* APP_0000 - 성공\n* APP_0409 - 이미 가입된 유저",
                   },
                   msg: {
                     type: "string",
@@ -226,7 +226,7 @@ const gatewayApi = {
             },
           },
         },
-        APP_3006: {
+        APP_0409: {
           description: "이미 가입된 유저",
           content: {
             "application/json": {
@@ -238,7 +238,7 @@ const gatewayApi = {
                     type: "string",
                     example: "APP_3006",
                     description:
-                      "응답코드:\n* APP_0000 - 성공\n* APP_3006 - 이미 가입된 유저",
+                      "응답코드:\n* APP_0000 - 성공\n* APP_0409 - 이미 가입된 유저",
                   },
                   msg: {
                     type: "string",

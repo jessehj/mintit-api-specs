@@ -1,5 +1,4 @@
 import { TAG_INQUIRY_MARKET_PRICE } from "../../../constants";
-import { createCookieHeaderRequest } from "../../../utils";
 
 const marketPriceApi = {
   "/rest/api/sale/est/price": {

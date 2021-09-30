@@ -1,8 +1,8 @@
+import SwaggerUI from "swagger-ui-react";
 import "swagger-ui-react/swagger-ui.css";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Redirect, Route, Switch } from "react-router";
-import SwaggerUI from "swagger-ui-react";
 import mintitSpec from "./pages/mintit/specs";
 import kbcardSpec from "./pages/kbcard/specs";
 

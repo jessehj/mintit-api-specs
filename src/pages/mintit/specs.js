@@ -1,9 +1,4 @@
-import {
-  SERVER_DEVELOPMENT,
-  SERVER_RELEASE,
-  TAG_INQUIRY_MARKET_PRICE,
-  Version,
-} from "../../constants";
+import { SERVER_DEVELOPMENT, SERVER_RELEASE, Version } from "../../constants";
 import marketPriceApi from "./apis/marketPriceApi";
 import models from "./models";
 
