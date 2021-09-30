@@ -4,6 +4,7 @@ import Manufacturer from "./Manufacturer";
 import Series from "./Series";
 import Model from "./Model";
 import MarketPrice from "./MarketPrice";
+import PhoneAsset from "./PhoneAsset";
 
 const models = {
   User,
@@ -12,6 +13,7 @@ const models = {
   Series,
   Model,
   MarketPrice,
+  PhoneAsset,
 };
 
 export default models;

@@ -14,6 +14,6 @@ export const SERVER_RELEASE = {
 };
 
 export const TAG_INQUIRY_MARKET_PRICE = "시세조회";
-export const TAG_GATEWAY = "유저인증";
-export const TAG_PHONE = "시세조회";
-export const TAG_ASSET = "자산관리";
+export const TAG_GATEWAY = "/gateway";
+export const TAG_PHONE = "/phone";
+export const TAG_ASSET = "/phone/asset";

@@ -1,11 +1,22 @@
-const MarketPrice = {
+const PhoneAsset = {
   type: "object",
-  require: ["id", "model_no", "model_nm", "series_nm", "mnco_nm"],
+  require: [
+    "id",
+    "market_price_id",
+    "model_no",
+    "model_nm",
+    "series_nm",
+    "mnco_nm",
+  ],
   properties: {
     id: {
       type: "integer",
+      example: 1,
+      description: "phone_asset_id",
+    },
+    market_price_id: {
+      type: "integer",
       example: 54738,
-      description: "market_price_id",
     },
     mnco_nm: {
       type: "string",
@@ -57,7 +68,16 @@ const MarketPrice = {
       example: 427018,
       description: "제품번호",
     },
+    purchased_at: {
+      type: "string",
+      example: "2020-09-29T15:00:00.000Z",
+      description: "구입일자 (UTC - YYYY-MM-DDTHH:mm:ss.SSSZ)",
+    },
+    memo: {
+      type: "string",
+      example: "나의 소중한 첫 폰",
+    },
   },
 };
 
-export default MarketPrice;
+export default PhoneAsset;
