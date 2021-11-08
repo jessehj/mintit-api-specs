@@ -2,11 +2,6 @@ const MarketPrice = {
   type: "object",
   require: ["id", "model_no", "model_nm", "series_nm", "mnco_nm"],
   properties: {
-    id: {
-      type: "integer",
-      example: 54738,
-      description: "market_price_id",
-    },
     mnco_nm: {
       type: "string",
       example: "삼성전자",

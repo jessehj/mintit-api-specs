@@ -14,9 +14,9 @@ import phoneAssetApi from "./apis/phoneAssetApi";
 const spec = {
   openapi: "3.0.0",
   info: {
-    description: "MINTIT X KBCard API 정의서",
+    description: "MINTIT X KB API 정의서",
     version: Version.KBCARD_SPEC_VERSION,
-    title: "MINTIT-API-SPECS for KBCard",
+    title: "MINTIT-API-SPECS for KB",
   },
   servers: [SERVER_DEVELOPMENT, SERVER_RELEASE],
   schemes: ["https", "http"],
@@ -29,15 +29,10 @@ const spec = {
       name: TAG_PHONE,
       description: "시세조회",
     },
-    {
-      name: TAG_ASSET,
-      description: "핸드폰 자산",
-    },
   ],
   paths: {
     ...gatewayApi,
     ...phoneApi,
-    ...phoneAssetApi,
   },
   components: {
     schemas: {

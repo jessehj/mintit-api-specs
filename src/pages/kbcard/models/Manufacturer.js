@@ -8,8 +8,8 @@ const Manufacturer = {
       description: "제조사 이름",
     },
     mnco_id: {
-      type: "integer",
-      example: 1207,
+      type: "string",
+      example: "1207",
       description: "제조사 코드",
     },
   },

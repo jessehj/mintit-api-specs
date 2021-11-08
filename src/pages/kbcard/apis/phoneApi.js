@@ -1,7 +1,7 @@
 import { TAG_PHONE } from "../../../constants";
 
 const phoneApi = {
-  "kbcard/api/phone/manufacturer": {
+  "kb/api/phone/manufacturer": {
     get: {
       tags: [TAG_PHONE],
       summary: "제조사 목록 조회",
@@ -63,7 +63,7 @@ const phoneApi = {
       },
     },
   },
-  "kbcard/api/phone/series": {
+  "kb/api/phone/series": {
     get: {
       tags: [TAG_PHONE],
       summary: "시리즈 목록 조회",
@@ -73,8 +73,8 @@ const phoneApi = {
           in: "query",
           name: "mnco_id",
           schema: {
-            type: "integer",
-            example: 1207,
+            type: "string",
+            example: "1207",
           },
           required: true,
         },
@@ -138,7 +138,7 @@ const phoneApi = {
       },
     },
   },
-  "kbcard/api/phone/model": {
+  "kb/api/phone/model": {
     get: {
       tags: [TAG_PHONE],
       summary: "모델 목록 조회",
@@ -148,8 +148,8 @@ const phoneApi = {
           in: "query",
           name: "mnco_id",
           schema: {
-            type: "integer",
-            example: 1207,
+            type: "string",
+            example: "1207",
           },
           required: true,
         },
@@ -222,7 +222,7 @@ const phoneApi = {
       },
     },
   },
-  "kbcard/api/phone/market-price": {
+  "kb/api/phone/market-price": {
     get: {
       tags: [TAG_PHONE],
       summary: "시세 조회",

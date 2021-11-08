@@ -1,7 +1,7 @@
 import { TAG_GATEWAY } from "../../../constants";
 
 const gatewayApi = {
-  "kbcard/api/gateway/signin": {
+  "kb/api/gateway/signin": {
     post: {
       tags: [TAG_GATEWAY],
       summary: "로그인",
@@ -92,7 +92,7 @@ const gatewayApi = {
       },
     },
   },
-  "kbcard/api/gateway/stplat": {
+  "kb/api/gateway/stplat": {
     get: {
       tags: [TAG_GATEWAY],
       summary: "회원가입 약관목록 조회",
@@ -155,7 +155,7 @@ const gatewayApi = {
       },
     },
   },
-  "kbcard/api/gateway/signup": {
+  "kb/api/gateway/signup": {
     post: {
       tags: [TAG_GATEWAY],
       summary: "회원가입",

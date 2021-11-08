@@ -15,10 +15,7 @@ const App = () => {
           exact
           render={() => <SwaggerUI spec={mintitSpec} />}
         />
-        <Route
-          path={"/kbcard"}
-          render={() => <SwaggerUI spec={kbcardSpec} />}
-        />
+        <Route path={"/kb"} render={() => <SwaggerUI spec={kbcardSpec} />} />
         <Redirect to={"/"} path={"*"} />
       </Switch>
     </BrowserRouter>

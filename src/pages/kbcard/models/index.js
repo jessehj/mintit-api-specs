@@ -13,7 +13,6 @@ const models = {
   Series,
   Model,
   MarketPrice,
-  PhoneAsset,
 };
 
 export default models;

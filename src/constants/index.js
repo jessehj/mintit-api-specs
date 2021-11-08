@@ -1,15 +1,15 @@
 export const Version = {
   MINTIT_SPEC_VERSION: "1.0.0",
-  KBCARD_SPEC_VERSION: "1.0.0",
+  KBCARD_SPEC_VERSION: "1.1.0",
 };
 
 export const SERVER_DEVELOPMENT = {
-  url: "https://stg.barunfon.com/",
+  url: "https://stg.portal.mintit.co.kr/",
   description: "개발서버",
 };
 
 export const SERVER_RELEASE = {
-  url: "https://mintit.co.kr/",
+  url: "https://portal.mintit.co.kr/",
   description: "운영서버",
 };
 
